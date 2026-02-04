@@ -1,7 +1,7 @@
 const USE_MOCK_AI = false; // Set to false to enable real AI integration (Level 2)
 const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname === ''
     ? 'http://localhost:5000/api/generate'
-    : 'https://YOUR_BACKEND_URL_HERE/api/generate'; // TODO: Replace with your actual production backend URL after deploying to Render/Heroku
+    : 'https://ai-cover-letter-generator-sdvt.onrender.com/api/generate';
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('generator-form');

@@ -27,8 +27,18 @@ The backend is a Node.js app.
 7. **Important**: Add your `GEMINI_API_KEY` in the Environment Variables section.
 8. Copy your new Backend URL (e.g., `https://my-app.onrender.com`).
 
-### 2. Deploy Frontend (to Netlify)
-The frontend is static HTML/CSS/JS.
-1. Go to `client/script.js`.
-2. Update the `API_URL` const to your Render URL.
-3. Drag and drop the `client` folder into Netlify.
+### 2. Deploy Frontend (to Netlify via GitHub)
+Since your frontend is in a subfolder (`client`), follow these exact steps to enable Continuous Deployment:
+
+1.  **Push your code** to GitHub.
+2.  Log in to [Netlify](https://app.netlify.com/).
+3.  Click **"Add new site"** -> **"Import from existing project"**.
+4.  Select **GitHub** and authorize it.
+5.  Pick your repository (**ai-cover-letter-generator**).
+6.  **Configure Build Settings**:
+    *   **Base directory**: (Leave empty)
+    *   **Build command**: (Leave empty)
+    *   **Publish directory**: `client`
+7.  Click **Deploy**.
+
+**Why this works**: Netlify will watch your repo. When you push changes to GitHub, Netlify will automatically "publish" the contents of the `client` folder to your live URL.
