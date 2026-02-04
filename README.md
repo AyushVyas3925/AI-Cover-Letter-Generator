@@ -30,7 +30,7 @@ A polished, responsive web application that leverages artificial intelligence to
 
 ## 🚀 Demo
 Check out the live version here:  
-👉 **[Live Demo Link](#)** *(https://ai-clg.netlify.app/)*
+👉 **[Live Demo Link](https://ai-clg.netlify.app/)**
 
 ---
 
